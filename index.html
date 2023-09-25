@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="nl">
+    <!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Manuel My DHL Parcel</title>
-    <meta name="author" content="DHL Parcel">
-    <meta name="description" content="Découvrez My DHL Parcel, notre service d'expédition tout-en-un ultramoderne. Fiable, rapide et facile à utiliser. Cette page explique toutes les fonctionnalités disponibles et les paramètres par défaut. Vous ne vous en sortez pas vraiment ? Nous vous aiderons avec plaisir.">
+    <title>Manuel My DHL Portal</title>
+    <meta name="author" content="DHL eCommerce">
+    <meta name="description" content="Découvrez My DHL Portal, notre service d'expédition tout-en-un ultramoderne. Fiable, rapide et facile à utiliser. Cette page explique toutes les fonctionnalités disponibles et les paramètres par défaut. Vous ne vous en sortez pas vraiment ? Nous vous aiderons avec plaisir.">
     <style type="text/css">
 
         @font-face {
@@ -76,7 +76,7 @@ body {
 }
 
 .menu {
-    padding: 40px 16px;
+    padding: 40px 32px;
 }
 
 p, span, a {
@@ -409,9 +409,9 @@ a.buttonText {
         <img src="https://static.dhlparcel.nl/images/cns/ecommerce/logo.png" class="logo">
     </div>
     <div class="col-12 hero">
-        <h1>Manuel My DHL Parcel </h1>
-            <p>Découvrez My DHL Parcel, notre service d'expédition tout-en-un ultramoderne. Fiable, rapide et facile à utiliser. Cette page explique toutes les fonctionnalités disponibles et les paramètres par défaut. Vous ne vous en sortez pas vraiment ? Nous vous aiderons avec plaisir.</p>
-            <a href="https://my.dhlparcel.be/account/sign-in" target="blank" class="buttonText"><div class="button ghost">Vers My DHL Parcel</div></a> 
+        <h1>Manuel My DHL Portal </h1>
+            <p>Découvrez My DHL Portal, notre service d'expédition tout-en-un ultramoderne. Fiable, rapide et facile à utiliser. Cette page explique toutes les fonctionnalités disponibles et les paramètres par défaut. Vous ne vous en sortez pas vraiment ? Nous vous aiderons avec plaisir.</p>
+            <a href="https://my.dhlparcel.be/account/sign-in" target="blank" class="buttonText"><div class="button ghost">Vers My DHL Portal</div></a> 
             <a href="https://www.dhlparcel.be/fr/bedrijven/online-tools-webformulier" target="blank" class="buttonText"><div class="button ghost">Support</div></a> 
             <a href="https://www.dhlparcel.be/fr/entreprises/dhl-plug-ins" target="blank" class="buttonText"><div class="button ghost">Plug-ins</div></a>
     </div>
@@ -424,7 +424,11 @@ a.buttonText {
 
                 <ol>
                     <li><a href="#h1" class="menu-link">Connexion</a></li>
-                    <li><a href="#h2" class="menu-link">Définition d'une adresse de livraison par défaut</a></li>
+                    <li><a href="#h2" class="menu-link">Paramètres par défaut</a></li>
+                        <ol class="sub-menu">
+                            <li><a href="#h2_1" class="menu-link">Définir l'adresse d'expédition par défaut</a></li>
+                            <li><a href="#h2_2" class="menu-link">Paramètres du numéro de client</a></li>
+                        </ol>
                     <li><a href="#h3" class="menu-link">Configuration d'une imprimante</a>
                         <ol class="sub-menu">
                             <li><a href="#h3_1" class="menu-link">Définition de l'imprimante d'étiquettes</a></li>
@@ -434,11 +438,10 @@ a.buttonText {
                     <li><a href="#h4" class="menu-link">Créer un envoi</a>
                         <ol class="sub-menu">
                             <li><a href="#h4_1" class="menu-link">Nouvel envoi</a></li>
-                            <li><a href="#h4_2" class="menu-link">Sauvegarder l'envoi pour plus tard</a></li>
+                            <li><a href="#h4_2" class="menu-link">Enregistrer ou dupliquer l'envoi</a></li>
                             <li><a href="#h4_3" class="menu-link">Suppression des envois</a></li>
-                            <li><a href="#h4_4" class="menu-link">Réglage des options par défaut pour les envois</a></li>
-                            <li><a href="#h4_5" class="menu-link">Création d'une facture douanière</a></li>
-                            <li><a href="#h4_6" class="menu-link">Création d'un envoi de retour</a></li>
+                            <li><a href="#h4_4" class="menu-link">Création d'une facture douanière</a></li>
+                            <li><a href="#h4_5" class="menu-link">Création d'un envoi de retour</a></li>
                         </ol>
                     </li>
                     <li><a href="#h5" class="menu-link">Réservation d'un enlèvement</a></li>
@@ -454,8 +457,10 @@ a.buttonText {
                         <ol class="sub-menu">
                             <li><a href="#h8_1" class="menu-link">Rapport d'envoi</a></li>
                             <li><a href="#h8_2" class="menu-link">Envois entrants</a></li>
-                            <li><a href="#h8_3" class="menu-link">Détails d'envoi</a></li>
+                            <li><a href="#h8_3" class="menu-link">Détails de l'expédition</a></li>
                             <li><a href="#h8_4" class="menu-link">Rapport du jour</a></li>
+                            <li><a href="#h8_5" class="menu-link">GoGreen</a></li>
+
                         </ol>
                     <li><a href="#h9" class="menu-link">Questions sur votre envoi</a>
                         <ol class="sub-menu">
@@ -481,32 +486,43 @@ a.buttonText {
         <div id="h1" class="section">
             <h2>Connexion</h2>
 
-                <p>Dès que vous avez un compte professionnel chez DHL Parcel, nous créons immédiatement un compte pour My DHL Parcel. Vous recevrez un e-mail avec un lien d'activation qui vous permettra de définir un mot de passe personnel. Le lien d'activation est valable pendant 48 heures. Le lien a expiré ? Dans ce cas, demandez un nouveau mot de passe en cliquant sur Mot de passe oublié? sur <a href="https://my.dhlparcel.be/account/sign-in">my.dhlparcel.be</a>. Une fois votre compte activé, connectez-vous toujours sur <a href="https://my.dhlparcel.be/account/sign-in">my.dhlparcel.be</a>. Pour une expérience utilisateur optimale, nous vous recommandons d'utiliser <b>Google Chrome</b>. </p>
-                <p>Dès que vous êtes connecté, vous voyez apparaître le <b>tableau de bord</b>. Il s'agit d'un aperçu des éléments les plus importants du service d'expédition. Vous pouvez voir quels envois sont prêts à être envoyés, quels envois font l'objet d'une exception et vous pouvez suivre vos envois directement sur le tableau de bord avec le système de suivi. Nous vous informerons des nouvelles fonctionnalités qui ont été ajoutées à My DHL Parcel avec <b>l'icône cadeau</b>. Le <b>crayon</b> vous permet d'ajouter ou de supprimer des éléments du tableau de bord. </p>
+                <p>Dès que vous avez un compte professionnel chez DHL eCommerce, nous créons immédiatement un compte pour My DHL Portal. Vous recevrez un e-mail avec un lien d'activation qui vous permettra de définir un mot de passe personnel. Le lien d'activation est valable pendant 48 heures. Le lien a expiré ? Dans ce cas, demandez un nouveau mot de passe en cliquant sur Mot de passe oublié? sur <a href="https://my.dhlparcel.be/account/sign-in">my.dhlparcel.be</a>. Une fois votre compte activé, connectez-vous toujours sur <a href="https://my.dhlparcel.be/account/sign-in">my.dhlparcel.be</a>. Pour une expérience utilisateur optimale, nous vous recommandons d'utiliser <b>Google Chrome</b>. </p>
+                <p>Dès que vous êtes connecté, vous voyez apparaître le <b>tableau de bord</b>. Il s'agit d'un aperçu des éléments les plus importants du service d'expédition. Vous pouvez voir quels envois sont prêts à être envoyés, quels envois font l'objet d'une exception et vous pouvez suivre vos envois directement sur le tableau de bord avec le système de suivi. Nous vous informerons des nouvelles fonctionnalités qui ont été ajoutées à My DHL Portal avec <b>l'icône cadeau</b>. Le <b>crayon</b> vous permet d'ajouter ou de supprimer des éléments du tableau de bord. </p>
 
                 <img src="images/1dashboard.png" width="100%">
         </div>
 
         <div id="h2" class="section">
-            <h2>Définition d'une adresse de livraison par défaut</h2>
+            <h2>Paramètres par défaut</h2>
 
-                <p>Pour définir une adresse comme adresse d'expédition par défaut, il est important que cette adresse figure dans votre carnet d'adresses. Choisissez <b>Carnet d'adresses</b> dans le menu. Ajoutez une adresse à l'aide du bouton rouge. </p>
-                <p>Choisissez ensuite <b>Préférences</b> dans le menu et allez à <b>Adresses d'envoi standard</b> en bas de la page. Sélectionnez une adresse dans votre carnet d'adresses et le numéro de client que vous souhaitez utiliser avec cette adresse. Cliquez sur le '+' pour ajouter l'adresse comme standard.</p>
+                    <p>Lors de votre première utilisation de My DHL Portal, vous pouvez appliquer certaines paramétrages par défaut pour simplifier l'envoi de colis et de palettes. Pour ce faire, dans la barre de menu à gauche, accédez à l'écran <b>Préférences</b>.</p>
+
+                <h3 id="h2_1" class="sub">Définir l'adresse d'expédition par défaut</h3>
+
+                    <p>Pour définir une adresse comme adresse d'expédition par défaut, il est important que cette adresse soit dans votre carnet d'adresses. Sélectionnez <b>Carnet d'adresses</b> dans le menu. Ajoutez une adresse via le bouton rouge.</p>
+                    <p>Ensuite, dans le menu, sélectionnez <b>Préférences</b> et allez à <b>Adresse d'expédition par défaut</b> en bas de la page. Sélectionnez ici l'adresse de votre carnet d'adresses et le numéro de client que vous souhaitez utiliser en association avec cette adresse. Cliquez sur le '+' pour ajouter l'adresse comme adresse par défaut.</p>
 
                 <img src="images/2defaultshippingaddress.png" width="100%">
 
-                <p>Si vous définissez plusieurs adresses d'expédition, vous pouvez choisir celle qui est sélectionnée par défaut lorsque vous créez un nouvel envoi. Les autres adresses que vous ajoutez ici peuvent facilement être choisies manuellement dans l'écran <b>Nouvel envoi</b>.</p>
+                    <p>Si vous configurez plusieurs adresses d'expédition, vous pouvez en choisir une qui sera sélectionnée par défaut lors de la création d'un nouvel envoi. Les autres adresses que vous ajoutez ici peuvent être facilement sélectionnées manuellement dans l'écran de <b>Nouvelle expédition</b>.</p>
+
+                <h3 id="h2_2" class="sub">Paramètres du numéro de client</h3>
+
+                    <p>Si vous avez plusieurs numéros de client chez DHL eCommerce, vous pouvez les différencier en ajoutant un nom ou une caractéristique qui sera ensuite visible dans les différents écrans et rapports de My DHL Portal. Allez dans <b>Préférences</b> puis <b>Paramètres de numéro de client</b>, sélectionnez votre numéro de compte et ajoutez un nom.</p>
+                    <p>Dans cet écran, vous pouvez également définir des <b>services supplémentaires par défaut</b> pour le numéro de compte concerné. Lors de la création d'une expédition, ces services seront automatiquement appliqués (si possible). C'est pratique si vous choisissez souvent les mêmes services.</p>
+                
+                <img src="images/accountnumbersettings.png" width="100%">
+
         </div>
 
         <div id="h3" class="section">
             <h2>Configuration d'une imprimante</h2>
 
-                    <p>Dans le menu <b>Préférences</b>, vous disposez de plusieurs options pour configurer l'imprimante. La disponibilité de ces options dépend de votre sélection dans Imprimante d'étiquettes.</p>
+                    <p>Dans le menu <b>Imprimante & étiquettes</b> sous <b>Préférences</b>, vous avez plusieurs options pour configurer l'imprimante. La disponibilité de ces options dépend de la méthode d'impression que vous souhaitez utiliser.</p>
 
                 <h3 id="h3_1" class="sub">Définition de l'imprimante d'étiquettes</h3>
 
-                    <p>Dans le menu Préférences, sélectionnez l'option Imprimante d'étiquettes. Si vous utilisez une imprimante d'étiquettes de marque Zebra, vous pouvez cocher Zebra Printing Tool pour accélérer le processus d'impression. Vous devez d'abord télécharger et installer le programme <a href="https://www.zebra.com/us/en/support-downloads.html" target="blank">ZPL</a>. Notez qu'en général, la qualité d'impression des étiquettes PDF est supérieure à celle des étiquettes ZPL. <a href="https://www.dhlparcel.be/fr/bedrijven/online-tools-webformulier" target="blank">Contactez-nous</a> pour d'autres renseignements.</p>
-                    <p>Choisissez l'option <b>Utiliser l'impression automatique</b> si vous souhaitez afficher l'aperçu avant impression immédiatement lorsque vous cliquez sur le bouton d'impression lors de la création d'un nouvel envoi. Si cette option est désactivée, l'étiquette sera téléchargée au format PDF. </p>
+                    <p>Choisissez l'option <b>Je veux imprimer directement avec une imprimante d'étiquettes</b>. Si vous utilisez une imprimante d'étiquettes de marque Zebra, vous pouvez cocher Zebra Printing Tool pour accélérer le processus d'impression. Vous devez d'abord télécharger et installer le programme <a href="https://www.zebra.com/us/en/support-downloads.html" target="blank">ZPL</a>. Notez qu'en général, la qualité d'impression des étiquettes PDF est supérieure à celle des étiquettes ZPL. <a href="https://www.dhlparcel.be/fr/bedrijven/online-tools-webformulier" target="blank">Contactez-nous</a> pour d'autres renseignements.</p>
 
                 <img src="images/3printersettings.png" width="100%">
 
@@ -515,8 +531,9 @@ a.buttonText {
     
                 <h3 id="h3_2" class="sub">Utilisation d'une imprimante classique</h3>
 
-                    <p>Si vous utilisez une imprimante normale, cochez l'option <b>Non, j'utilise une imprimante classique</b>. Cela vous donne accès à deux nouvelles options. Tout d'abord, vous pouvez choisir le nombre d'étiquettes que vous souhaitez imprimer par page A4 (trois étiquettes maximum par page). En outre, l'option <b>Déterminer la position de l'étiquette sur la page</b> vous permet de déterminer à quelle position sur la page A4 l'étiquette sera imprimée si vous choisissez d'imprimer moins de trois étiquettes par page. Ce choix est disponible lorsque vous imprimez une étiquette dans l'écran <b>Nouvel envoi</b>.</p>
+                    <p>Si vous utilisez une imprimante ordinaire, sélectionnez l'option <b>Je n'utilise pas d'imprimante d'étiquettes</b>. Cela vous donne accès à deux nouvelles options. Tout d'abord, vous pouvez choisir le nombre d'étiquettes que vous souhaitez imprimer par page A4 (trois étiquettes maximum par page). En outre, l'option <b>Déterminer la position de l'étiquette sur la page</b> vous permet de déterminer à quelle position sur la page A4 l'étiquette sera imprimée si vous choisissez d'imprimer moins de trois étiquettes par page. Ce choix est disponible lorsque vous imprimez une étiquette dans l'écran <b>Nouvel envoi</b>.</p>
                     <p>Il est important de sélectionner paysage (landscape) et taille réelle (actual size) dans les préférences de votre imprimante locale.</p>
+                    <p>Choisissez l'option <b>Utiliser l'impression automatique</b> si vous souhaitez afficher l'aperçu avant impression immédiatement lorsque vous cliquez sur le bouton d'impression lors de la création d'un nouvel envoi. Si cette option est désactivée, l'étiquette sera téléchargée au format PDF. </p>
         </div>
 
         <div id="h4" class="section">
@@ -534,33 +551,26 @@ a.buttonText {
                     <p>Enfin, utilisez le bouton d'impression pour imprimer immédiatement l'étiquette de l'envoi. À partir de ce moment, vous trouverez votre envoi dans l'écran <b>Envois expédiés</b>. Le bouton d'impression ne fonctionne pas ? Dans ce cas, vérifiez si vous avez rempli tous les champs obligatoires, y compris ceux de la rubrique <b>Services supplémentaires</b>.</p>
                     <p><i>Conseil : vous souhaitez réserver un enlèvement ? N'oubliez pas de le faire après avoir créé votre/vos envoi(s). Vous réservez votre enlèvement dans l'écran <b>Enlèvement</b>.</i></p> 
                     
-                <h3 id="h4_2" class="sub">Sauvegarder l'envoi pour plus tard</h3>
+                <h3 id="h4_2" class="sub">Expédition en double ou sauvegarde pour plus tard</h3>
 
-                    <p>Vous souhaitez imprimer plusieurs étiquettes à la fois ou envoyer votre envoi à une date ultérieure ? Enregistrez votre envoi dans <b>Brouillons</b> en plaçant votre souris sur le bouton d'impression et en cliquant sur le bouton d'enregistrement qui apparaît. Vous trouverez maintenant l'envoi dans l'écran <b>Brouillons</b>. Sélectionnez-y les envois que vous souhaitez imprimer et cliquez sur <b>Print label</b>. Désormais, vous retrouverez votre envoi dans <b>Envois expédiés</b>.</p>
-        
+                    <p>Souhaitez-vous imprimer plusieurs étiquettes en une seule fois ou expédier votre envoi à une date ultérieure ? Enregistrez votre envoi dans <b>Brouillons</b> en plaçant votre souris sur le bouton d'impression et en cliquant sur le bouton d'enregistrement qui apparaît. Vous trouverez maintenant l'envoi dans l'écran <b>Brouillons</b>. Sélectionnez les envois que vous souhaitez imprimer et cliquez sur <b>Imprimer l'étiquette</b>. Dès maintenant, vous retrouverez votre envoi dans la section <b>Envois envoyés</b>.</p>
+                    <p>Il est également possible de dupliquer rapidement un envoi déjà créé. Allez dans la section <b>Envois envoyés</b> ou <b>Envois archivés</b> et cliquez sur l'envoi que vous souhaitez dupliquer. Ensuite, en haut à droite, sélectionnez <b>Nouvel envoi</b>.</p>
+                     
+                <img src="images/6duplicateshipment.png" width="100%">
+
+                    <p><i>Conseil : vous souhaitez réserver un enlèvement ? N'oubliez pas de le faire après avoir créé votre/vos envoi(s). Vous réservez votre enlèvement dans l'écran <b>Enlèvement</b>.</i></p>
+
                 <h3 id="h4_3" class="sub">Suppression des envois</h3>
 
-                    <p>Les envois pour lesquels vous avez déjà créé une étiquette, mais que vous ne souhaitez toujours pas envoyer, peuvent être archivés ou déplacés vers la corbeille. Sélectionnez le(s) envoi(s) et choisissez <b>Archiver le(s) envoi(s)</b> ou <b>Déplacer vers la corbeille</b> dans le menu. L'envoi est supprimé de la liste <b>Envois expédiés</b>. Vous ne pouvez pas vider la corbeille.</p>
+                    <p>Les envois pour lesquels vous avez déjà créé une étiquette, mais que vous ne souhaitez toujours pas envoyer, peuvent être archivés ou déplacés vers la corbeille. Sélectionnez le(s) envoi(s) et choisissez <b>Archiver le(s) envoi(s)</b> ou <b>Déplacer vers la corbeille</b> dans le menu. L'envoi est supprimé de la liste <b>Envois expédiés</b>. Vous ne pouvez pas vider la corbeille.</p> 
 
-                <h3 id="h4_4" class="sub">Réglage des options par défaut pour les envois</h3>
-
-                    <p>Si vous envoyez souvent le même type d'envois, il peut être utile de définir certaines normes. Dans <b>Préférences</b>, par exemple, vous pouvez choisir un type d'adresse standard (privée ou professionnelle), un type d'envoi standard et des services supplémentaires standard. Vous choisissez les services supplémentaires standard souhaités par numéro de client. Ces standards sont appliqués à chaque nouvel envoi (si possible en combinaison avec votre type d'envoi). Vous pouvez facilement cocher ou décocher les services supplémentaires pour chaque envoi.</p>
-
-                <img src="images/5defaultshippingoptions.png" width="100%">
-
-                    <p>Il est également possible de dupliquer rapidement un envoi qui a déjà été créé. Allez dans <b>Envois expédiés</b> ou <b>Envois archivés</b> et cliquez sur l'envoi que vous voulez dupliquer. Sélectionnez ensuite <b>Nouvel envoi</b> en haut à droite. </p>
-
-                <img src="images/6duplicateshipment.png" width="100%">
-                
-                    <p><i>Conseil : vous souhaitez réserver un enlèvement ? N'oubliez pas de le faire après avoir créé votre/vos envoi(s). Vous réservez votre enlèvement dans l'écran <b>Enlèvement</b>.</i></p> 
-
-                <h3 id="h4_5" class="sub">Création d'une facture douanière</h3>
+                <h3 id="h4_4" class="sub">Création d'une facture douanière</h3>
 
                     <p>Lorsque vous expédiez des envois soumis à des formalités douanières, vous devez joindre les documents appropriés à votre envoi. Vous trouverez toutes les informations à ce sujet sur notre <a href="https://www.dhlparcel.be/fr/entreprises/support/envoi/documents-douaniers" target="blank">site</a>.</p>
 
                 <img src="images/7customsform.png" width="100%">
 
-                    <p>Vous avez la possibilité de créer une <a href="https://www.dhlparcel.be/sites/dhlparcel.be/files/content/docs/Exigences-facture-en-douane_BE_fr.pdf" target="blank">facture</a> en anglais via My DHL Parcel. Dès que vous sélectionnez une destination hors UE, un bouton permettant de remplir un <b>formulaire de douane</b> apparaît en bas.</p>
+                    <p>Vous avez la possibilité de créer une <a href="https://www.dhlparcel.be/sites/dhlparcel.be/files/content/docs/Exigences-facture-en-douane_BE_fr.pdf" target="blank">facture</a> en anglais via My DHL Portal. Dès que vous sélectionnez une destination hors UE, un bouton permettant de remplir un <b>formulaire de douane</b> apparaît en bas.</p>
                     <p>Dans le formulaire qui s'affiche, indiquez d'abord s'il s'agit d'un <b>envoi commercial</b> (destiné à la vente) <b>ou non</b>. Choisissez ensuite un <b>type d'exportation</b> et un <b>motif d'exportation</b> qui s'appliquent à votre envoi. </p>
                     <p>Dans les champs suivants, sélectionnez <b>Incoterms®</b> et la <b>ville Incoterm</b>. Incoterms® sont les conditions de livraison qui reflètent les arrangements convenus entre les commerçants (acheteur et vendeur). Les plus courantes sont 'Delivered At Place' et 'Delivered Duty Paid' (cette dernière n'est possible que pour les envois à destination de la Suisse). Cliquez <a href="https://www.dhlparcel.be/fr/entreprises/incoterms" target="blank">ici</a> pour de plus amples informations sur Incoterms®. </p>    
                     <p>Entrez la <b>devise</b> du pays de destination. Immédiatement en dessous, vous pouvez saisir les informations correctes (en anglais) par article et ajouter des articles en utilisant le bouton jaune. Veuillez noter que le poids de votre envoi doit toujours être d'au moins 1 kg. Le <b>code HS</b> ou code des marchandises est un code à plusieurs chiffres utilisé par les douanes du monde entier pour classer les produits. Vous trouverez une liste de codes <a href="https://www.tarifdouanier.eu/" target="blank">ici</a> ou demandez à votre fournisseur.</p>
@@ -568,9 +578,9 @@ a.buttonText {
                     <p>Enfin, vous pouvez ajouter des documents douaniers supplémentaires en bas de page. Cliquez sur <b>OK</b> pour revenir à l'écran <b>Nouvel envoi</b> si vous souhaitez encore apporter des modifications aux détails de votre envoi, ou cliquez directement sur le bouton d'impression pour imprimer vos étiquettes et votre facture douanière.</p>
                     <p><i>Conseil : avez-vous plusieurs articles à envoyer au Royaume-Uni ? Gagnez du temps en utilisant un modèle pour <a rapidement href="#h6_3">importer les informations sur le produit</a>.</i></p>
 
-                <h3 id="h4_6" class="sub">Création d'un envoi de retour</h3>
+                <h3 id="h4_5" class="sub">Création d'un envoi de retour</h3>
            
-                    <p>Dans My DHL Parcel, il existe plusieurs façons de créer une étiquette de retour. Il sera ainsi beaucoup plus facile pour votre destinataire d'effectuer des retours éventuels.</p>
+                    <p>Dans My DHL Portal, il existe plusieurs façons de créer une étiquette de retour. Il sera ainsi beaucoup plus facile pour votre destinataire d'effectuer des retours éventuels.</p>
 
                 <h4>Option 1 : Envoi de l'étiquette de retour par le biais d'un envoi expédié existant</h4>
 
@@ -652,7 +662,6 @@ a.buttonText {
                     <p>Téléchargez le <a href="https://www.dhlparcel.be/sites/dhlparcel.be/files/content/docs/Template importer envois_b2x_FR.xls">template</a> pour les données d'envois. Créez votre liste d'envois dans le template et sauvegardez-le en fichier txt ou csv 'délimité par des virgules' ou avec 'séparateur de liste'. Dans le template, les champs obligatoires et facultatifs sont indiqués par les noms de colonnes. Déplacez votre souris sur le nom de la colonne pour voir l'explication.</p>
                     <p>Dans l'écran <b>Envois</b>, sélectionnez <b>Importer des envois</b>. Importez votre fichier avec les envois. Donnez un nom à votre fichier et associez les colonnes du fichier aux champs de l'application. Attention : si vous voyez des messages d'erreur dans les colonnes, par exemple des services supplémentaires, il est important de mettre un '0' (inactif) ou un '1' (actif) dans toute la ligne. Après la première association, vous pouvez utiliser un schéma précédemment enregistré par le biais du menu déroulant en haut à droite.</p>
                     <p>Vous pouvez également utiliser votre propre template. Veuillez vous assurer que tous les champs obligatoires sont associés. Vous pouvez alors choisir de changer le menu déroulant de <b>Colonne à Valeur fixe</b> dans la première colonne. Cela vous permet d'ajouter toutes les options standard pour votre importation.</p>
-                    <p><i>Conseil : souhaitez-vous partager vos modèles créés avec des collègues qui possèdent leur propre compte My DHL Parcel ? Veuillez nous <a href="https://www.dhlparcel.be/fr/bedrijven/online-tools-webformulier"> contacter</a> pour obtenir de l’aide.</i></p>
 
                 <img src="images/16importshipments1.png" width="100%">
 
@@ -663,11 +672,11 @@ a.buttonText {
                     <p>Vous pouvez trouver vos envois importés dans le menu <b>Brouillons</b>. </p>
                     <p>Sélectionnez les envois et imprimez vos étiquettes. Vous pouvez toujours ajouter un envoi manuellement dans l'écran <b>Nouvel envoi</b>. </p>
                     <p><i>Conseil : dans le menu <b>Préférences</b>, vous pouvez choisir le codage correct des caractères de votre fichier CSV sous l'option <b>Importer CSV</b>. </i></p>
-       
+
                 <h3 id="h6_3" class="sub">Importation des données de produit</h3>
 
                     <p>Lorsque vous expédiez plusieurs articles au Royaume-Uni, vous pouvez facilement importer des informations sur ces articles lors de la création de vos documents douaniers. </p>
-                    <p>Téléchargez le <a href="https://www.dhlparcel.nl/sites/default/files/content/importer_des_articles.csv">template</a> pour importer des articles dans My DHL Parcel. Ajoutez vos éléments dans le modèle et enregistrez le fichier en tant que fichier txt ou csv (délimité par des virgules). Toutes les colonnes sont obligatoires.</p>
+                    <p>Téléchargez le <a href="https://www.dhlparcel.nl/sites/default/files/content/importer_des_articles.csv">template</a> pour importer des articles dans My DHL Portal. Ajoutez vos éléments dans le modèle et enregistrez le fichier en tant que fichier txt ou csv (délimité par des virgules). Toutes les colonnes sont obligatoires.</p>
                     <p>Lors de la création de votre envoi au Royaume-Uni, vous pourrez modifier le <b>formulaire de douane étendu</b>. Lorsque vous ouvrez ce formulaire, le bouton <b>Importer des articles</b> s'affiche dans la section <b>Décrire votre envoi</b>. Utilisez ce bouton pour télécharger votre fichier txt ou csv. Cliquez ensuite sur <b>Suivant</b> et sélectionnez <b>Ignorer la première ligne</b>. Vous verrez maintenant vos articles dans l'aperçu.</p>
         
         </div>
@@ -701,32 +710,40 @@ a.buttonText {
 
                 <h3 id="h8_2" class="sub">Envois entrants</h3>
 
-                    <p>L'onglet <b>Envois entrants</b> vous montre les envois qui sont en route vers vous. Ce rapport comprend les envois de retour et les autres envois DHL qui sont adressés à l'adresse e-mail de votre compte My DHL Parcel. Vous pouvez facilement ajouter plus d'adresses e-mail dans le menu Préférences. Attention : les envois qui vous sont adressés, mais pour lesquels aucune adresse e-mail de destinataire n'est spécifiée, n'apparaîtront pas dans ce rapport.</p>
+                    <p>L'onglet <b>Envois entrants</b> vous montre les envois qui sont en route vers vous. Ce rapport comprend les envois de retour et les autres envois DHL qui sont adressés à l'adresse e-mail de votre compte My DHL Portal. Vous pouvez facilement ajouter plus d'adresses e-mail dans le menu Préférences. Attention : les envois qui vous sont adressés, mais pour lesquels aucune adresse e-mail de destinataire n'est spécifiée, n'apparaîtront pas dans ce rapport.</p>
 
                     <p>Il suffit de filtrer par adresse e-mail et par période ou de rechercher un envoi spécifique à l'aide du champ de recherche. Sélectionnez <b>Télécharger PDF</b>, <b>xlxs</b> ou <b>CSV</b> pour télécharger les données. </p>
 
-                <h3 id="h8_3" class="sub">Détails d'envoi</h3>
+                <h3 id="h8_3" class="sub">Détails de l'expédition</h3>
 
-                    <p>En cliquant sur un envoi spécifique dans l'un des <b>Rapports</b>, vous obtiendrez des informations détaillées sur cet envoi. Vous verrez non seulement tous les statuts, mais aussi, par exemple, les spécifications du colis ou de la palette. Outre la possibilité de créer un <a href="#h9_2">ticket</a>, vous avez également la possibilité de télécharger le <b>statut de l'envoi</b>.</p>
+                    <p>En cliquant sur un envoi spécifique dans l'un des <b>Rapports</b>, vous verrez des informations détaillées sur cet envoi. Ici, vous pouvez non seulement voir tous les statuts, mais aussi, par exemple, les spécifications du colis ou de la palette. En plus de la possibilité de créer un <a href="#h9_2">billet</a>, vous avez également la possibilité de télécharger le <b>statut de l'envoi</b> ici.</p>
 
-                    <img src="images/shipmentreportdetails.png" width="100%">
+                <img src="images/shipmentreportdetails.png" width="100%">
 
-                    <p><i>Conseil : Des actions telles que la création d'un ticket ou le téléchargement du statut de l’envoi peuvent également être effectuées directement à partir de l'écran d’aperçu. Pour ce faire, cliquez sur les trois points dans la colonne la plus à droite <b>Actions</b>.</i></p>
-            
+                    <p><i>Conseil : Des actions telles que la création d'un ticket ou le téléchargement d'un statut d'expédition peuvent également être effectuées directement à partir de l'écran de présentation. Vous pouvez le faire en cliquant sur les trois points dans la colonne des <b>Actions</b> la plus à droite.</i></p>
+                
                 <h3 id="h8_4" class="sub">Rapport du jour</h3>
 
-                    <p>Vous pouvez télécharger un rapport du jour des expéditions que vous avez envoyées avec My DHL Parcel. Sélectionnez <b>Rapports</b> dans le menu et allez à <b>Rapport du jour</b>.</p>
+                    <p>Vous pouvez télécharger un rapport du jour des expéditions que vous avez envoyées avec My DHL Portal. Sélectionnez <b>Rapports</b> dans le menu et allez à <b>Rapport du jour</b>.</p>
 
                 <img src="images/21dailyreport.png" width="100%">
 
                     <p>Sélectionnez la date souhaitée et choisissez <b>Télécharger</b> pour télécharger les données sous forme de fichier pdf. Un envoi n'apparaîtra dans un rapport du jour que s'il se trouve sous <b>Envois expédiés</b>.</p>
+
+                <h3 id="h8_5" class="sub">GoGreen</h3>
+
+                    <p>Dans le rapport <a href="https://www.dhlparcel.be/fr/gogreen" target="_blank">GoGreen</a>, vous pouvez voir combien de CO2 a été compensé par les envois que vous avez effectués. Filtrez en haut de la page par année, numéro de client et par exemple par destination pour obtenir des données plus spécifiques. En survolant les barres vertes avec votre souris, vous pouvez voir les valeurs exactes.</p>
+
+                <img src="images/gogreenreport.png" width="100%">
+
+                    <p>Dans cette fenêtre, vous pouvez également télécharger votre promesse GoGreen annuelle et (à la fin de l'année en question) votre certificat GoGreen validé par SGS.</p>
 
         </div>
 
         <div id="h9" class="section">
             <h2>Questions sur votre envoi</h2>
 
-                    <p>Vous avez des questions sur un envoi ? Dans ce cas, vous pouvez créer rapidement et facilement un <b>ticket</b> dans My DHL Parcel. De cette façon, votre question et toutes les données nécessaires à l'envoi seront partagées directement avec le service clientèle. Par ailleurs, vous aurez toujours un aperçu clair de l'état d'avancement de vos questions ouvertes. Vous pouvez créer un ticket de deux manières.</p>
+                    <p>Vous avez des questions sur un envoi ? Dans ce cas, vous pouvez créer rapidement et facilement un <b>ticket</b> dans My DHL Portal. De cette façon, votre question et toutes les données nécessaires à l'envoi seront partagées directement avec le service clientèle. Par ailleurs, vous aurez toujours un aperçu clair de l'état d'avancement de vos questions ouvertes. Vous pouvez créer un ticket de deux manières.</p>
 
                 <h3 id="h9_1" class="sub">Ticket à propos d'un envoi expédié</h3>
 
@@ -734,7 +751,7 @@ a.buttonText {
                     
                 <img src="images/23sentshipments.png" width="100%">
 
-                    <p>Un formulaire apparaît. Sélectionnez un <b>motif</b> pour votre ticket, puis entrez le plus de détails possible. Plus notre service clientèle recevra d'informations de votre part, mieux il sera à même de trouver une solution. <b>Attention</b> : si vous avez envoyé un colis à un consommateur hors du Benelux avec DHL Parcel Connect, veuillez ajouter la facture en pièce jointe au ticket.</p>
+                    <p>Un formulaire apparaît. Sélectionnez un <b>motif</b> pour votre ticket, puis entrez le plus de détails possible. Plus notre service clientèle recevra d'informations de votre part, mieux il sera à même de trouver une solution. <b>Attention</b> : si vous avez envoyé un colis à un consommateur hors du Benelux avec DHL eCommerce Connect, veuillez ajouter la facture en pièce jointe au ticket.</p>
                                         
                 <img src="images/24openticket.png" width="100%">
 
@@ -752,14 +769,14 @@ a.buttonText {
 
                 <img src="images/25ticketpage.png" width="100%">
                     
-                    <p>Vous voulez rendre les tickets visibles pour les collègues qui utilisent My DHL Parcel avec leur propre compte ? Veuillez contacter le service Sales Support au 02-200 71 30 ou envoyer un e-mail à parcelbe.salessme@dhl.com.</p>
+                    <p>Vous voulez rendre les tickets visibles pour les collègues qui utilisent My DHL Portal avec leur propre compte ? Veuillez contacter le service Sales Support au 02-200 71 30 ou envoyer un e-mail à parcelbe.salessme@dhl.com.</p>
                     
         </div>
 
         <div id="h10" class="section">
             <h2>Transfert d'instructions d'envoi</h2>
         
-                    <p>Il peut arriver que votre envoi ne puisse pas être remis au destinataire. Dans certains cas, l'envoi peut rester sur l'un de nos sites DHL. Pour les <b>envois professionnels</b>, vous pouvez utiliser le <b>Rapport d'envoi</b> dans My DHL Parcel pour nous indiquer ce que nous devons faire avec l'envoi. Si vous ne fournissez pas d'instructions, l'envoi sera renvoyé à l'expéditeur après 30 jours.</p>
+                    <p>Il peut arriver que votre envoi ne puisse pas être remis au destinataire. Dans certains cas, l'envoi peut rester sur l'un de nos sites DHL. Pour les <b>envois professionnels</b>, vous pouvez utiliser le <b>Rapport d'envoi</b> dans My DHL Portal pour nous indiquer ce que nous devons faire avec l'envoi. Si vous ne fournissez pas d'instructions, l'envoi sera renvoyé à l'expéditeur après 30 jours.</p>
         
                     <p>Pour trouver rapidement les envois qui nécessitent des instructions, dans <b>Rapport d'envoi</b>, filtrez sur <b>Instructions requises</b>. Cliquez ensuite sur le bouton Instructions requises dans la colonne <b>Attention</b> pour soumettre de nouvelles instructions concernant un envoi.</p>
 
@@ -778,7 +795,7 @@ a.buttonText {
 
                     <p>Cliquez sur <b>Ajouter</b> pour ajouter de nouveaux utilisateurs. Ici, vous pouvez également définir directement les droits/rôles par utilisateur et sélectionner les numéros de clients qui s'appliquent à cet utilisateur. Vous pouvez modifier les droits d'un utilisateur à tout moment en faisant un clic droit sur les trois points, puis en cliquant sur <b>Modifier</b>. Dans l'écran qui apparaît, choisissez les droits et cliquez sur <b>Enregistrer</b>.</p>
 
-                    <p>Vous pouvez paramétrer les rôles d'utilisateurs suivants dans My DHL Parcel :</p>
+                    <p>Vous pouvez paramétrer les rôles d'utilisateurs suivants dans My DHL Portal :</p>
             
                     <p><b>- Basic user </b>: Ce rôle par défaut permet à l'utilisateur de visualiser les envois, les enlèvements, les entrées dans le carnet d'adresses et les pages de retours. Il permet également à l'utilisateur de définir un logo client pour personnaliser les notifications de DHL.<br>
                        <b>- Reporting Manager</b>: ce rôle permet d'accéder à la page Rapports ainsi qu'à tous les rapports qui s'y trouvent. Cet utilisateur peut également accéder au widget « Vos émissions de CO2 » sur le tableau de bord.<br>
@@ -791,7 +808,7 @@ a.buttonText {
                        <b>- Support ticket manager</b>: ce rôle permet à l'utilisateur d'accéder à la fonctionnalité Tickets, comme la création et la consultation de tickets pour notre service clientèle.<br>
                        <b>- User manager </b>: ce rôle permet à l'utilisateur d'accéder à la gestion des utilisateurs, comme l'ajout et l'édition d'autres utilisateurs dans le même environnement.<br>
                        <b>- Rate manager</b>: ce rôle permet à l'utilisateur d'accéder à la page des tarifs, et ainsi de visualiser les tarifs des numéros de compte sélectionnés.<br>
-                       <b>- API manager</b>: ce rôle permet d'accéder à la page des paramètres de la clé API. Vous pouvez y générer des clés API qui permettent, par exemple, de connecter votre boutique en ligne à My DHL Parcel.</p>
+                       <b>- API manager</b>: ce rôle permet d'accéder à la page des paramètres de la clé API. Vous pouvez y générer des clés API qui permettent, par exemple, de connecter votre boutique en ligne à My DHL Portal.</p>
                     
                     <p><i>Attention : vous ne pouvez ajouter un utilisateur qu'une seule fois. Vous avez accidentellement supprimé un utilisateur ? N'hésitez pas à nous <a href="https://www.dhlparcel.be/fr/bedrijven/online-tools-webformulier" target="blank">contacter</a>.</i></p>
 
@@ -839,7 +856,7 @@ a.buttonText {
             
                     <img src="images/customnotifications.png" width="100%">
             
-                    <p>Cliquez sur <b>Nouveau logo</b>. Dans l'écran qui s'affiche, sélectionnez le numéro de client pour lequel vous souhaitez configurer un logo. Les notifications par e-mail pour les envois créés sur ce numéro incluront le logo, même si les envois ne sont pas créés dans My DHL Parcel. Cliquez sur <b>Parcourir ice</b> pour télécharger votre logo. Les logos sont souvent mieux affichés au <b>format PNG</b>, et une taille minimale de 100x100 pixels est recommandée. Redimensionnez ensuite l'image selon vos souhaits en faisant glisser, en réduisant ou en agrandissant le champ de sélection. Pour terminer, cliquez sur <b>Envoyer</b>.</p>
+                    <p>Cliquez sur <b>Nouveau logo</b>. Dans l'écran qui s'affiche, sélectionnez le numéro de client pour lequel vous souhaitez configurer un logo. Les notifications par e-mail pour les envois créés sur ce numéro incluront le logo, même si les envois ne sont pas créés dans My DHL Portal. Cliquez sur <b>Parcourir ice</b> pour télécharger votre logo. Les logos sont souvent mieux affichés au <b>format PNG</b>, et une taille minimale de 100x100 pixels est recommandée. Redimensionnez ensuite l'image selon vos souhaits en faisant glisser, en réduisant ou en agrandissant le champ de sélection. Pour terminer, cliquez sur <b>Envoyer</b>.</p>
                         
                     <img src="images/customnotificationsupload.png" width="100%">
 
